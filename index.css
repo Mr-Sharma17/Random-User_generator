@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: cursive;
+}
+body {
+  background-color: blanchedalmond;
+}
+header > h2 {
+  color: green;
+  font-size: 3rem;
+  margin: 40px 0;
+  cursor: pointer;
+  transition: transform 5s;
+}
+header > h2:hover {
+  transform: rotate(360deg);
+}
+#getuser-btn {
+  margin-top: 30px;
+  padding: 30px 60px;
+  border: 0;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50%;
+}
+#getuser-btn:hover {
+  background-color: white;
+  color: black;
+}
+#container {
+  padding: 30px 100px 50px;
+  min-width: 25vw;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 120px 0px;
+  line-height: 2;
+}
+.dob {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-transform: capitalize;
+}
+.mail,
+.usepass,
+.ctcode,
+.stco {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.img-div {
+  border: 12px solid blanchedalmond;
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: -120px auto 40px;
+}
+.img-div img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+}
+.img-div img:hover {
+  scale: 1.2;
+}
