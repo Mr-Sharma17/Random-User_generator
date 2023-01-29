@@ -10,7 +10,7 @@ body {
 header > h2 {
   color: green;
   font-size: 3rem;
-  margin: 40px 0;
+  margin: 20px 0;
   cursor: pointer;
   transition: transform 5s;
 }
@@ -36,7 +36,7 @@ header > h2:hover {
   padding: 30px 100px 50px;
   min-width: 25vw;
   position: fixed;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 120px 0px;
