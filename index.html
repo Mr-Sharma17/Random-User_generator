@@ -13,20 +13,8 @@
     <title>Random User Generator</title>
   </head>
   <body>
-    <header>
-      <div id="password">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>        
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>0</button>
-        <button>Reset</button>
-      </div>
+  <div id="content">
+    <header>      
       <h2>
         <u><i>Random User Generator</i></u>
       </h2>
@@ -38,6 +26,28 @@
       <button id="getuser-btn">Click me</button>
       <div id="container"></div>
     </main>
+  </div>
+  <div id="password">
+    <div id="intraction">
+      <input type="number" id="pin" placeholder="Enter PIN"></input>
+      <button id="confirmbtn">Confirm</button>
+    </div>
+    <span id="errorspan"></span>
+    <div id="btn">
+      <div value="1" class="numbtn">1</div>
+      <div value="2" class="numbtn">2</div>
+      <div value="3" class="numbtn">3</div>
+      <div value="4" class="numbtn">4</div>
+      <div value="5" class="numbtn">5</div>
+      <div value="6" class="numbtn">6</div>
+      <div value="7" class="numbtn">7</div>
+      <div value="8" class="numbtn">8</div>
+      <div value="9" class="numbtn">9</div>
+      <div></div>
+      <div value="0" class="numbtn">0</div>
+      <button id="resetbtn">Clear</button>
+    </div>
+  </div>
   </body>
 </html>
 <script src="index.js"></script>
