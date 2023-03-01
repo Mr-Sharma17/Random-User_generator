@@ -1,12 +1,13 @@
 # Random-User_generator
-Have a look *[here](https://delicate-tapioca-3d7c05.netlify.app/)*.
+Have a look *[here](https://ornate-salamander-f967f3.netlify.app/)* [ PIN : 9211 ].
 
 
 # About
-The Random User Generator is a web application where user can get the details of a random user.
+The Random User Generator is a web application from where one can get the details of a random user (required a PIN to get the data [ PIN : 9211 ]).
 
 ### Features :
 >
+> - creative interface
 > - rendering real-time data form server
 > - clean UI
 > - animation
@@ -29,9 +30,10 @@ The Random User Generator is a web application where user can get the details of
 
 # The UI
 
-#### Desktop screen
+![RUG shot2](https://user-images.githubusercontent.com/107980619/222192194-34da1c14-b001-46ca-ac23-548a25613dc6.png)
 
 ![RUG shot](https://user-images.githubusercontent.com/107980619/215327203-7c0dd4ac-bd38-4650-97e9-5c3979d8edee.png)
+
 
 
 *****Feedback and Suggestions are always Welcomed.***
