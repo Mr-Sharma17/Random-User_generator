@@ -1,8 +1,68 @@
+//catching required elements
+const container = document.getElementById('container'),
+  contentContainer = document.getElementById('content'),
+  passwordContainer = document.getElementById('password'),
+  getUserBtn = document.getElementById('getuser-btn'),
+  key = document.getElementsByClassName('numbtn'),
+  display = document.getElementById('pin'),
+  resetBtn = document.querySelector('#btn #resetbtn'),
+  confirmBtn = document.getElementById('confirmbtn'),
+  errorspan = document.getElementById('errorspan');
 
-const container = document.getElementById('container');
-const getUserBtn = document.getElementById('getuser-btn');
+contentContainer.style.display = 'none'; //by default hiding the content
+let password = ""; //initilzing as empty to store input-value
 
+//handling the resetting pin
+const handleReset = () => {
+  display.value = "";
+  password = "";
+}
 
+//error-span styling
+function stylingError() {
+  errorspan.style.color = 'red';
+  confirmBtn.disabled = true;
+  setTimeout(() => {
+    errorspan.innerHTML = null;
+    confirmBtn.disabled = false;
+  }, 5000);
+}
+
+//clear button functioning
+resetBtn.onclick = () => {
+  handleReset();
+}
+
+//taking care of clicking confirm button
+confirmBtn.onclick = function () {
+  if (display.value.length === 0 || display.value.length > 8) {
+    handleReset();
+    errorspan.innerText = 'Invalid PIN!!';
+    stylingError();
+    return;
+  } if (password === '9211' || display.value === '9211') {
+    contentContainer.style.display = 'block';
+    passwordContainer.style.display = 'none';
+  } else {
+    handleReset();
+    errorspan.innerText = 'Incorrect PIN';
+    stylingError();
+    return;
+  }
+}
+
+//taking care of input values
+function handleClick(e) {
+  password += (e.target.attributes[0].value);
+  display.value = password;
+}
+
+//listening event by looping through keys
+for (let x = 0; x < key.length; x++) {
+  key[x].addEventListener("click", handleClick);
+};
+
+//fetching data
 const getUser = async () => {
   try {
     container.innerHTML = `<div><h2>Loading...</h2></div>`;
@@ -18,6 +78,7 @@ const getUser = async () => {
   }
 };
 
+//appending data
 const appendUserData = (user) => {
   container.innerHTML = null;
 
@@ -54,4 +115,5 @@ const appendUserData = (user) => {
 </div>`;
 };
 
+//listening event on get user-button
 getUserBtn.addEventListener('click', getUser);
