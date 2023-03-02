@@ -1,5 +1,5 @@
 # Random-User_generator
-Have a look *[here](https://ornate-salamander-f967f3.netlify.app/)* [ PIN : 9211 ].
+Have a look *[here](https://luxury-malabi-80ab47.netlify.app/)* [ PIN : 9211 ].
 
 
 # About
