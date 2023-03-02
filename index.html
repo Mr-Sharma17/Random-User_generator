@@ -13,41 +13,48 @@
     <title>Random User Generator</title>
   </head>
   <body>
-  <div id="content">
-    <header>      
-      <h2>
-        <u><i>Random User Generator</i></u>
-      </h2>
-    </header>
-    <main>
-      <div>
-        <h3>For generating a random user data, click the below button.</h3>
+    <!-- content section -->
+    <section>
+      <div id="content">
+        <header>      
+          <h2>
+            <u><i>Random User Generator</i></u>
+          </h2>
+        </header>
+        <main>
+          <div>
+            <h3>For generating a random user data, click the below button.</h3>
+          </div>
+          <button id="getuser-btn">Click me</button>
+          <div id="container"></div>
+        </main>
       </div>
-      <button id="getuser-btn">Click me</button>
-      <div id="container"></div>
-    </main>
-  </div>
-  <div id="password">
-    <div id="intraction">
-      <input type="number" id="pin" placeholder="Enter PIN"></input>
-      <button id="confirmbtn">Confirm</button>
-    </div>
-    <span id="errorspan"></span>
-    <div id="btn">
-      <div value="1" class="numbtn">1</div>
-      <div value="2" class="numbtn">2</div>
-      <div value="3" class="numbtn">3</div>
-      <div value="4" class="numbtn">4</div>
-      <div value="5" class="numbtn">5</div>
-      <div value="6" class="numbtn">6</div>
-      <div value="7" class="numbtn">7</div>
-      <div value="8" class="numbtn">8</div>
-      <div value="9" class="numbtn">9</div>
-      <div></div>
-      <div value="0" class="numbtn">0</div>
-      <button id="resetbtn">Clear</button>
-    </div>
-  </div>
+    </section>
+    
+    <!-- section for pin input -->
+    <section>
+      <div id="password">
+        <div id="intraction">
+          <input type="number" id="pin" placeholder="Enter PIN"></input>
+          <button id="confirmbtn">Confirm</button>
+        </div>
+        <span id="errorspan"></span>
+        <div id="btn">
+          <div value="1" class="numbtn">1</div>
+          <div value="2" class="numbtn">2</div>
+          <div value="3" class="numbtn">3</div>
+          <div value="4" class="numbtn">4</div>
+          <div value="5" class="numbtn">5</div>
+          <div value="6" class="numbtn">6</div>
+          <div value="7" class="numbtn">7</div>
+          <div value="8" class="numbtn">8</div>
+          <div value="9" class="numbtn">9</div>
+          <div></div>
+          <div value="0" class="numbtn">0</div>
+          <button id="resetbtn">Clear</button>
+        </div>
+      </div>
+    </section>
   </body>
 </html>
 <script src="index.js"></script>

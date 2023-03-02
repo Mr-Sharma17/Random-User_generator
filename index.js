@@ -18,7 +18,7 @@ const handleReset = () => {
   password = "";
 }
 
-//error-span styling
+//error-span styling logic
 function stylingError() {
   errorspan.style.color = 'red';
   confirmBtn.disabled = true;
@@ -28,12 +28,12 @@ function stylingError() {
   }, 5000);
 }
 
-//clear button functioning
+//clear button functioning logic
 resetBtn.onclick = () => {
   handleReset();
 }
 
-//taking care of clicking confirm button
+//logic for clicking confirm button
 confirmBtn.onclick = function () {
   if (display.value.length === 0 || display.value.length > 8) {
     handleReset();
@@ -62,7 +62,7 @@ for (let x = 0; x < key.length; x++) {
   key[x].addEventListener("click", handleClick);
 };
 
-//fetching data
+//logic for fetching data
 const getUser = async () => {
   try {
     container.innerHTML = `<div><h2>Loading...</h2></div>`;
