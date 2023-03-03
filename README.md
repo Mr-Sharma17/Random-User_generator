@@ -3,7 +3,7 @@ Have a look *[here](https://luxury-malabi-80ab47.netlify.app/)* [ PIN : 9211 ].
 
 
 # About
-The Random User Generator is a web application from where one can get the details of a random user (required a PIN to get the data [ PIN : 9211 ]).
+The Random User Generator is a web application from where one can get the details of a random user (required a PIN to access [ PIN : 9211 ]).
 
 ### Features :
 >
